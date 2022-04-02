@@ -13,6 +13,8 @@ app.get('/', () => {
     console.log("hi");
 })
 
+app.use('/api/auth', require('./routers/userAuth'));
+
 const port = 5000;
 
 app.listen(port, () => {
