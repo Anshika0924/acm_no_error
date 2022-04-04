@@ -14,6 +14,7 @@ app.get('/', () => {
 })
 
 app.use('/api/auth', require('./routers/userAuth'));
+app.use('/api/selling', require('./routers/selling'));
 
 const port = 5000;
 
